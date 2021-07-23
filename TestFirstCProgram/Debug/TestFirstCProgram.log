@@ -1,0 +1,71 @@
+﻿  C:\Users\albs_\source\repos\msx-c-tests\TestFirstCProgram
+  -------------------------------------------------------------------------------
+  Building target configuration files...
+  -------------------------------------------------------------------------------
+  MSX SDCC Make Script Copyright
+  version 00.05.00 - Codename Mac\'n\'Tux
+  Build Debug Level 150
+  -------------------------------------------------------------------------------
+  Filesystem config...
+  Current dir C:\Users\albs_\source\repos\msx-c-tests\TestFirstCProgram
+  Target file .\MSXAPP.ROM
+  Object path .\Debug\objs
+  Binary path .\Debug\bin
+  MSX dev path .\DEV
+  MSX lib path .\DEV\libs
+  -------------------------------------------------------------------------------
+  Making a small housecleaning.
+  Done housecleaning.
+  -------------------------------------------------------------------------------
+  Building application settings file...
+  Adding specific ROM settings...
+  Done building application settings file.
+  -------------------------------------------------------------------------------
+  Collecting include cirectories...
+  Collected .
+  Collected DEV\libs\fusion-c\header
+  Done collecting include directories.
+  -------------------------------------------------------------------------------
+  Building application modules...
+  Processing ASM file MSX\ROM\msxromcrt0.s...
+  Processing C file msxromapp.c...
+  Done building application modules.
+  -------------------------------------------------------------------------------
+  Collecting libraries...
+  Collected DEV\libs\fusion-c\lib\fusion.lib
+  Done collecting libraries.
+  -------------------------------------------------------------------------------
+  Determining CODE-LOC...
+  Analyzing Debug\objs\msxromcrt0.rel...
+  FILE_START is 0x8000.
+  _HEADER segment size is 0x0000001C.
+  CODE-LOC determined to be 0x0000801C.
+  -------------------------------------------------------------------------------
+  Compiling...
+  ## sdcc --code-loc 0x0000801C --data-loc 0xC000 -mz80 --no-std-crt0 --opt-code-size --disable-warning 196 "Debug\objs\msxromcrt0.rel" "Debug\objs\msxromapp.rel" "DEV\libs\fusion-c\lib\fusion.lib" -I"." -I"DEV\libs\fusion-c\header" -o "Debug\objs\MSXAPP.IHX"
+  Done compiling.
+  -------------------------------------------------------------------------------
+  Build MSX binary...
+  hex2bin v2.5, Copyright (C) 2017 Jacques Pelletier & contributors
+  
+  Allocate_Memory_and_Rewind:
+  Lowest address:   00008000
+  Highest address:  0000BFFF
+  Starting address: 00008000
+  Max Length:       16384
+  
+  Binary file start = 00008000
+  Records start     = 00008000
+  Highest address   = 0000BFFF
+  Pad Byte          = FF
+  Done building MSX binary.
+  -------------------------------------------------------------------------------
+  Moving MSX binary...
+  Debug\objs\MSXAPP.ROM
+          1 arquivo(s) copiado(s).
+  Done moving MSX binary.
+  -------------------------------------------------------------------------------
+  Building symbol file...
+  Done building symbol file.
+  -------------------------------------------------------------------------------
+  All set. Happy MSX'ing.

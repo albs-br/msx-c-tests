@@ -1,0 +1,147 @@
+ASxxxx Linker V03.00 + NoICE + sdld,  page 1.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000000  .__.ABS.                           
+     00000000  l__CABS                         
+     00000000  l__DABS                         
+     00000000  l__HEADER                       
+     00000000  l__HEAP                         
+     00000000  l__HOME                         
+     00000000  l__INITIALIZED                  
+     00000000  l__INITIALIZER                  
+     00000000  l__ROMDATA                      
+     00000000  s__CABS                         
+     00000000  s__DABS                         
+     00000000  s__HEADER                       
+     00000000  s__HEADER0                      
+     00000001  l__GSFINAL                      
+     00000002  l__DATA                         
+     00000010  l__GSINIT                       
+     0000001C  l__HEADER0                      
+     00000401  l__CODE                         
+     0000801C  s__CODE                         
+     0000841D  s__GSINIT                       
+     0000841D  s__HOME                         
+     0000842D  s__GSFINAL                      
+     0000842E  s__INITIALIZER                  
+     0000842E  s__ROMDATA                      
+     0000C000  s__DATA                         
+     0000C002  s__HEAP                         
+     0000C002  s__INITIALIZED                  
+ASxxxx Linker V03.00 + NoICE + sdld,  page 2.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_CODE                               0000801C    00000401 =        1025. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     0000801C  _Wait                              msxromapp
+     00008092  _main                              msxromapp
+     0000816B  _PutSprite                         putsprite
+     000081D3  _SpriteSmall                       spriteSmall
+     0000820A  _SpriteOn                          spriteon
+     00008241  _SpriteReset                       spritereset
+     00008253  _WaitKey                           
+     0000826B  _SetSpritePattern                  setspritepattern
+     000082C1  _VDPwriteNi                        
+     000082D1  _VpokeFirst                        vpoke
+     0000835D  _Vpoke                             vpoke
+     00008375  _OutPorts                          
+     00008385  _SpriteOff                         spriteoff
+     000083BC  _OutPort                           
+     000083C6  _Sprite16                          sprite16
+     000083FD  _Screen                            
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 3.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_HEADER0                            00000000    0000001C =          28. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00008010  init                               
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 4.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_GSINIT                             0000841D    00000010 =          16. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     0000841D  gsinit                             
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 5.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_GSFINAL                            0000842D    00000001 =           1. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 6.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_DATA                               0000C000    00000002 =           2. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     0000C000  _heap_top                          
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 7.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_HEAP                               0000C002    00000000 =           0. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     0000C002  _HEAP_start                        
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 8.
+
+Files Linked                              [ module(s) ]
+
+Debug\objs\msxromcrt0.rel                 [  ]
+Debug\objs\msxromapp.rel                  [ msxromapp ]
+
+
+Libraries Linked                          [ object file ]
+
+DEV\libs\fusion-c\lib\fusion.lib          [ putsprite.rel ]
+DEV\libs\fusion-c\lib\fusion.lib          [ spriteSmall.rel ]
+DEV\libs\fusion-c\lib\fusion.lib          [ spriteon.rel ]
+DEV\libs\fusion-c\lib\fusion.lib          [ spritereset.rel ]
+DEV\libs\fusion-c\lib\fusion.lib          [ waitkey.rel ]
+DEV\libs\fusion-c\lib\fusion.lib          [ setspritepattern.rel ]
+DEV\libs\fusion-c\lib\fusion.lib          [ vdpwriteni.rel ]
+DEV\libs\fusion-c\lib\fusion.lib          [ vpoke.rel ]
+DEV\libs\fusion-c\lib\fusion.lib          [ outports.rel ]
+DEV\libs\fusion-c\lib\fusion.lib          [ spriteoff.rel ]
+DEV\libs\fusion-c\lib\fusion.lib          [ outport.rel ]
+DEV\libs\fusion-c\lib\fusion.lib          [ sprite16.rel ]
+DEV\libs\fusion-c\lib\fusion.lib          [ screen.rel ]
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 9.
+
+User Base Address Definitions
+
+_CODE = 0x801c
+_DATA = 0xc000
+
+
